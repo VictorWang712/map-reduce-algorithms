@@ -26,6 +26,10 @@ for name, src in programs.items():
     subprocess.run(["gcc", f"{SRC}/{src}", "-O2", "-pthread", "-o", exe])
 
     out = f"{OUTPUT}/{name}_output.txt"
+    if not os.path.exists(out):
+        file = open(out, "w")
+        file.close()
+
     start = time.time()
     subprocess.run([exe, INPUT, out])
     end = time.time()
