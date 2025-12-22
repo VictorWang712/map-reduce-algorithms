@@ -4,11 +4,11 @@ import time
 import json
 from datetime import datetime
 
-SRC = "code/src"
-BIN = "code/bin"
-INPUT = "data/input/The_Divine_Comedy_by_Dante.txt"
-OUTPUT = "data/output"
-LOG = "benchmark/log"
+SRC = "../code/src"
+BIN = "../code/bin"
+INPUT = "../data/input/The_Divine_Comedy_by_Dante.txt"
+OUTPUT = "../data/output"
+LOG = "../benchmark/log"
 
 os.makedirs(BIN, exist_ok=True)
 os.makedirs(OUTPUT, exist_ok=True)
