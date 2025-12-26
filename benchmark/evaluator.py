@@ -6,7 +6,7 @@ from datetime import datetime
 
 SRC = "../code/src"
 BIN = "../code/bin"
-INPUT = "../data/input/The_Divine_Comedy_by_Dante.txt"
+INPUT = "../data/input/In_Search_Of_Lost_Time.txt"
 OUTPUT = "../data/output"
 LOG = "../benchmark/log"
 
