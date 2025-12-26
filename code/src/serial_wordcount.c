@@ -97,10 +97,14 @@ int main(int argc, char *argv[]) {
 
     qsort(arr, n, sizeof(Entry), cmp);
 
+    long long sum = 0;
+
     FILE *fout = fopen(argv[2], "w");
     for (int i = 0; i < n; i++) {
         fprintf(fout, "%s %d\n", arr[i].word, arr[i].count);
+        sum += arr[i].count;
     }
+    fprintf(fout, "Total words: %lld\n", sum);
     fclose(fout);
 
     return 0;
